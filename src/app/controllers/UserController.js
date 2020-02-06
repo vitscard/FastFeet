@@ -42,7 +42,6 @@ class UserController {
     });
 
     if (!(await schema.isValid(req.body))) {
-      console.log(req.body);
       return res.status(400).json({ error: 'Validation fails!' });
     }
 
